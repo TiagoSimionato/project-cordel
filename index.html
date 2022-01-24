@@ -52,27 +52,44 @@
 			text-decoration: underline;
 		}
 
+		section {
+			padding: 10vh 0vh 10vh 30px;
+			line-height: 2em;
+			font-family: var(--fontecaligrafia);
+			font-size: 2em;
+		}
+
 		section.normal {
 			background-color: white;
 			color: black;
 		}
 
-		section {
-			padding: 10vh 0vh 10vh 30px;
-			line-height: 2em;
-			font-family: var(--fontecaligrafia);
-			font-size: 2.3vw;
+		section.normal p {
+			padding-bottom: 10vh;
 		}
 
 		section.imagem {
 			background-color: rgb(53, 46, 46);
 			color: white;
+			box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+			background-position: right center;
+			background-size: cover;
+			background-attachment: fixed;
 		}
 
 		section.imagem p {
 			width: fit-content;
 			padding: 10px;
 			background-color: rgba(0, 0, 0, 0.212);
+			text-shadow: 1px 1px 0px black;
+		}
+
+		section#img1 {
+			background-image: url('imagens/background001.jpg');
+		}
+
+		section#img2 {
+			background-image: url('imagens/background002.jpg');
 		}
 
 		footer {
@@ -101,7 +118,7 @@
 		</p>
 	</section>
 
-	<section class="imagem">
+	<section class="imagem" id="img1">
 		<p>
 			Não é mais como era antes <br>
 			É tudo abreviado <br>
@@ -135,7 +152,7 @@
 		</p>
 	</section>
 
-	<section class="imagem">
+	<section class="imagem" id="img2">
 		<p>
 			Tenho saudade das cartas <br>
 			Escritas com a própria mão <br>
