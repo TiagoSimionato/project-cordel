@@ -6,6 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cordel Moderno</title>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&display=swap');
+
+		:root {
+			--fontenormal: Verdana, Geneva, Tahoma, sans-serif;
+			--fontedestaque: 'Abel', sans-serif;
+			--fontecaligrafia: 'Architects Daughter', cursive;
+		}
+
 		* {
 			margin: 0px;
 			padding: 0px;
@@ -14,6 +22,7 @@
 		html, body {
 			background-color: darkgray;
 			min-height: 100vh;
+			font-family: var(--fontenormal);
 		}
 
 		header {
@@ -25,6 +34,8 @@
 		header h1 {
 			padding-top: 50px;
 			font-variant: small-caps;
+			font-family: var(--fontedestaque);
+			font-size: 7vw;
 		}
 
 		header p {
@@ -49,6 +60,8 @@
 		section {
 			padding: 10vh 0vh 10vh 30px;
 			line-height: 2em;
+			font-family: var(--fontecaligrafia);
+			font-size: 2.3vw;
 		}
 
 		section.imagem {
@@ -57,7 +70,8 @@
 		}
 
 		section.imagem p {
-			width: 400px;
+			width: fit-content;
+			padding: 10px;
 			background-color: rgba(0, 0, 0, 0.212);
 		}
 
